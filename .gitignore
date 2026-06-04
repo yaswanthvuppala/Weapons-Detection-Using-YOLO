@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# YOLO pre-trained model weights (downloaded files)
+*.pt
+
+# Local training runs and outputs (includes heavy weights and logs)
+runs/
+
+# Dataset folders (highly recommended to ignore large datasets in Git)
+weapons/
+
+# IDE settings
+.vscode/
+.idea/
+.project
+.pydevproject
+.settings/
