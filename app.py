@@ -13,6 +13,89 @@ st.set_page_config(
     layout="wide"
 )
 
+# --- Custom Premium UI CSS ---
+st.markdown("""
+<style>
+    /* Global Background with Gradient */
+    .stApp {
+        background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+        background-attachment: fixed;
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    /* Sidebar Glassmorphism */
+    [data-testid="stSidebar"] {
+        background: rgba(15, 32, 39, 0.4) !important;
+        backdrop-filter: blur(15px) !important;
+        -webkit-backdrop-filter: blur(15px) !important;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Gradient Headers */
+    h1, h2, h3 {
+        background: -webkit-linear-gradient(45deg, #00C9FF, #92FE9D);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+    }
+    
+    /* Premium Buttons with Micro-Animations */
+    .stButton > button {
+        background: linear-gradient(45deg, #ff416c, #ff4b2b);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 0.6rem 1.2rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 65, 108, 0.3);
+    }
+    
+    .stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 65, 108, 0.5);
+        color: white;
+    }
+    
+    .stButton > button:active {
+        transform: translateY(1px);
+    }
+    
+    /* Interactive File Uploader */
+    [data-testid="stFileUploadDropzone"] {
+        background: rgba(255, 255, 255, 0.03);
+        border: 2px dashed rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        transition: all 0.3s;
+    }
+    
+    [data-testid="stFileUploadDropzone"]:hover {
+        border-color: #00C9FF;
+        background: rgba(0, 201, 255, 0.05);
+        box-shadow: 0 0 15px rgba(0, 201, 255, 0.2);
+    }
+    
+    /* Elegant Info & Alert Boxes */
+    [data-testid="stAlert"] {
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 10px !important;
+        backdrop-filter: blur(10px);
+        color: #fff !important;
+    }
+    
+    /* Card-like image containers */
+    [data-testid="stImage"] {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # --- Title and Header ---
 st.title("🛡️ YOLO Weapon & Person Detection Dashboard")
 st.markdown("A real-time computer vision system built to detect people and weapons using YOLO11.")
