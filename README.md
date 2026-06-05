@@ -10,6 +10,9 @@ pinned: false
 
 # Weapons Detection Using YOLO11s
 
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/yaswanthvuppala/weapon-detector)
+**[🚀 Try the Live Demo on Hugging Face!](https://huggingface.co/spaces/yaswanthvuppala/weapon-detector)**
+
 A real-time deep learning computer vision system built to detect **people** and **weapons** (e.g., firearms, knives, and other weapons) from static images, recorded videos, and live webcam feeds. 
 
 The project utilizes the state-of-the-art **YOLO11s (You Only Look Once)** architecture from Ultralytics, trained and evaluated on a custom dataset.
