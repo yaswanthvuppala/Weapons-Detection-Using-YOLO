@@ -1,3 +1,13 @@
+---
+title: Weapon Detector
+emoji: 🛡️
+colorFrom: blue
+colorTo: red
+sdk: streamlit
+app_file: app.py
+pinned: false
+---
+
 # Weapons Detection Using YOLO11s
 
 A real-time deep learning computer vision system built to detect **people** and **weapons** (e.g., firearms, knives, and other weapons) from static images, recorded videos, and live webcam feeds. 
