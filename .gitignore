@@ -26,3 +26,14 @@ weapons/
 .project
 .pydevproject
 .settings/
+
+# Temporary test files and downloads
+temp_image.jpg
+temp_downloads/
+
+# Local logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
